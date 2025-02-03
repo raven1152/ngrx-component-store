@@ -1,11 +1,6 @@
 <form (ngSubmit)="submit()">
 
-  <pre>
-{{ isAuthenticated$ | async }}
-  </pre>
-
   <br>
-
   <label for="userId">
     User ID:
   </label><br>
@@ -27,9 +22,14 @@
   ><br><br>
 
   <input type="submit" value="Submit">
+  <br>
+  <br>
 
 </form>
+
+{{ isAuthenticated$ | async }}
 
 <pre>
 {{ state$ | async | json }}
 </pre>
+<br>
