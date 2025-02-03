@@ -1,0 +1,9 @@
+@let isAuthenticated = isAuthenticated$ | async;
+@let state = state$ | async;
+
+{{isAuthenticated}}
+
+<pre>
+{{state | json}}
+</pre>
+<br>
